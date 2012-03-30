@@ -25,7 +25,7 @@ class ToggleEnvironment
 
 
   getConfig: ->
-    jQuery.getJSON '/switcher/env.json', (data) =>
+    jQuery.getJSON '/environments.json', (data) =>
       @toggle data
 
 

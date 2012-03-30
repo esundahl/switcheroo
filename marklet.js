@@ -31,7 +31,7 @@
 
     ToggleEnvironment.prototype.getConfig = function() {
       var _this = this;
-      return jQuery.getJSON('/switcher/env.json', function(data) {
+      return jQuery.getJSON('/environments.json', function(data) {
         return _this.toggle(data);
       });
     };
